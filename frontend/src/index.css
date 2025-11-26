@@ -1,0 +1,137 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+@plugin "daisyui/theme" {
+  name: "lms";
+  default: true;
+  prefersdark: false;
+  color-scheme: "light";
+  --color-base-100: oklch(98% 0.003 247.858);
+  --color-base-200: oklch(96% 0.007 247.896);
+  --color-base-300: oklch(92% 0.013 255.508);
+  --color-base-content: oklch(20% 0.042 265.755);
+  --color-primary: oklch(82% 0.189 84.429);
+  --color-primary-content: oklch(100% 0 0);
+  --color-secondary: oklch(83% 0.128 66.29);
+  --color-secondary-content: oklch(26% 0.079 36.259);
+  --color-accent: oklch(82% 0.189 84.429);
+  --color-accent-content: oklch(100% 0 0);
+  --color-neutral: oklch(82% 0.189 84.429);
+  --color-neutral-content: oklch(98% 0.003 247.858);
+  --color-info: oklch(86% 0.022 252.894);
+  --color-info-content: oklch(44% 0.03 256.802);
+  --color-success: oklch(72% 0.219 149.579);
+  --color-success-content: oklch(98% 0.014 180.72);
+  --color-warning: oklch(70% 0.213 47.604);
+  --color-warning-content: oklch(98% 0.016 73.684);
+  --color-error: oklch(57% 0.245 27.325);
+  --color-error-content: oklch(97% 0.013 17.38);
+  --radius-selector: 0.5rem;
+  --radius-field: 0.5rem;
+  --radius-box: 0.5rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 2px;
+  --depth: 0;
+  --noise: 1;
+}
+
+body {
+  font-family: 'YS Text Regular Regular', sans-serif !important;
+}
+
+.fullscreenmodal {
+  max-width: none !important;
+  max-height: none !important;
+}
+
+
+.icon-wrapper{
+  background-color: #fdb50045;
+  border-radius: 999px;
+  padding: 15px;
+}
+
+.icon-wrapper .icon {
+  color: #fdb700;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+
+.icon-error-wrapper{
+  background-color: #fd000045;
+  border-radius: 999px;
+  padding: 15px;
+}
+
+.icon-error-wrapper .icon {
+  color: #ba0000;
+  height: 100%;
+  width: 100%;
+}
+.modal-icon-wrapper{
+  height: 70px;
+  width: 70px;
+  margin: auto;
+  margin-top: 10px;
+  /*corner-shape: squircle;*/
+}
+.id-squircle-icon {
+  width: 70px;
+  height: 70px;
+  corner-shape: squircle;
+  background-color: black;
+}
+.uploadnc-card{
+  border-style: dashed;
+  border: 2px  #cecece;
+}
+
+.auth-btn {
+  padding: 5px;
+  border-radius: 999px;
+  background-color: transparent;
+}
+.auth-btn {
+  padding: 10px;
+  border-radius: 15px;
+  background-color: transparent;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.auth-btn:hover {
+  background-color: #efecec;
+}
+
+.auth-btn .label {
+  opacity: 0;                 /* start hidden */
+  max-width: 0;               /* start collapsed */
+  overflow: hidden;           /* hide overflow during transition */
+  white-space: nowrap;        /* prevent wrapping */
+  transition: opacity 0.3s ease, max-width 0.3s ease; /* animate opacity & width */
+}
+
+.auth-btn:hover .label {
+  opacity: 1;
+  max-width: 200px;           /* adjust width as needed */
+}
+
+
+.lessons-row:hover {
+
+  box-shadow: 0 2px 8px 0 rgba(11, 11, 11, 0.06);
+  background-color: #cecece1b;
+}
+
+.no-root-padding {
+  padding: 0 !important;
+  margin: 0 !important;
+  max-width: none !important;
+}
+
