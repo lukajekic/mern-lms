@@ -10,8 +10,8 @@ import toast from 'react-hot-toast'
 
 
 const api = axios.create({
-    baseURL: import.meta.env.VITE_BACKEND,
-    withCredentialss: true
+  baseURL: import.meta.env.VITE_BACKEND,
+  withCredentials: true
 })
 
 

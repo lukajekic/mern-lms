@@ -9,7 +9,7 @@ const dotenv = require('dotenv')
 dotenv.config()
 const connectDB = require('./utils/db')
 app.use(cors({
-    origin: ["http://localhost:5173", "http://100.112.98.14:5173"],
+    origin: "http://localhost:5173",
     credentials: true
 }));
 const CookieParser = require('cookie-parser')
