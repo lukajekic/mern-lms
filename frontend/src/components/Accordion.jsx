@@ -18,7 +18,7 @@ const Accordion = ({ title, icon, data }) => {
 
         {data.map((item, index)=>{
           return (
-            <a  href={`http://localhost:5173/assignment/${item._id}/view`}>
+            <a  href={`/assignment/${item._id}/view`}>
 
             <div key={index} className={`flex w-full justify-between  mt-0  items-center ${data.length > 1 ? "border-b border-solid border-[#e3e3e3]" : ""}`}>
             <div className="flex gap-3 py-2  ">

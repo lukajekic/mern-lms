@@ -170,7 +170,7 @@ const deleteResponse = async()=>{
            {(responseData.status === "assigned" || responseData.status === "revise") && (
                      <div className="flex flex-row gap-7 items-center w-full justify-center mt-8">
 
-                        <a href={`http://localhost:5173/assignment/${id}/code`}>
+                        <a href={`/assignment/${id}/code`}>
                             <div className="card card-border bg-white w-96 submitcard">
                                 <div className="card-body p-0">
                                     <div className="icon-wrapper modal-icon-wrapper" style={{ marginTop: "0px" }}>
@@ -183,7 +183,7 @@ const deleteResponse = async()=>{
                             </div>
                         </a>
 
-                        <a href={`http://localhost:5173/assignment/${id}/upload`}>
+                        <a href={`/assignment/${id}/upload`}>
                             <div className="card card-border bg-white w-96 submitcard">
                                 <div className="card-body p-0">
                                     <div className="icon-wrapper modal-icon-wrapper" style={{ marginTop: "0px" }}>
