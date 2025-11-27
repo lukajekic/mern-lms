@@ -25,8 +25,8 @@ if (saved) {
     res.cookie("token", generateJWT(user._id), {
     maxAge: 2592000000,
     httpOnly: true,
-    secure: false,
-    sameSite: "strict"
+    secure: true,
+    sameSite: "none"
    })
 
    res.status(200).json(user)
@@ -49,8 +49,8 @@ if (user &&  (await bcrypt.compare(password, user.password))) {
    res.cookie("token", generateJWT(user._id), {
     maxAge: 2592000000,
     httpOnly: true,
-    secure: false,
-    sameSite: "strict"
+    secure: true,
+    sameSite: "none"
    })
 
    res.status(200).json({"message": "login"})
@@ -84,8 +84,8 @@ const Logout = asyncHandler(async(req,res)=>{
     res.cookie('token', '', {
         expires: new Date(0),
         httpOnly: true,
-        secure: false,
-        sameSite: "strict"
+        secure: true,
+    sameSite: "none"
     })
       res.status(200).json({ message: 'Logged out successfully' });
 
