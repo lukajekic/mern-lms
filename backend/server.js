@@ -9,7 +9,7 @@ const dotenv = require('dotenv')
 dotenv.config()
 const connectDB = require('./utils/db')
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: "https://lms-backend-lukajekic.netlify.app",
     credentials: true
 }));
 const CookieParser = require('cookie-parser')
